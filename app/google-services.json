@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "170580455814",
+    "firebase_url": "https://harjoitusprojecti-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "harjoitusprojecti",
+    "storage_bucket": "harjoitusprojecti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170580455814:android:236df8e54a26bca78ffc07",
+        "android_client_info": {
+          "package_name": "com.example.firebasetoimisaatana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170580455814-o2k264qe0huq64v74qrl8jmnuqer9t5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_yOuuUvgt9hlXf8OTQiQUGfagtm2JOws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170580455814-o2k264qe0huq64v74qrl8jmnuqer9t5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170580455814:android:b5e1c9ef1fcaa2288ffc07",
+        "android_client_info": {
+          "package_name": "com.example.kotlin_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170580455814-o2k264qe0huq64v74qrl8jmnuqer9t5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_yOuuUvgt9hlXf8OTQiQUGfagtm2JOws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170580455814-o2k264qe0huq64v74qrl8jmnuqer9t5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170580455814:android:da9338ed6acc03f28ffc07",
+        "android_client_info": {
+          "package_name": "com.example.kotlin_firebase_database"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170580455814-o2k264qe0huq64v74qrl8jmnuqer9t5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_yOuuUvgt9hlXf8OTQiQUGfagtm2JOws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170580455814-o2k264qe0huq64v74qrl8jmnuqer9t5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

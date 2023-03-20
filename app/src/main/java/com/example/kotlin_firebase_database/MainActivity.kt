@@ -44,13 +44,34 @@ class MainActivity : AppCompatActivity() {
         val userid = findViewById<EditText>(R.id.userid).text.toString()
         writeNewUser(userid,name,email)
     }
+
+    fun editUser(v: View?) {
+        val name = findViewById<EditText>(R.id.resultUsername).text.toString()
+        val email = findViewById<EditText>(R.id.resultEmail).text.toString()
+        val userid = findViewById<EditText>(R.id.searchName).text.toString()
+        database = FirebaseDatabase.getInstance().getReference("Users")
+        database.child("users").child(userid).child("email").setValue(email)
+        database.child("users").child(userid).child("username").setValue(name)
+
+    }
+
+    fun deleteUser(v: View?) {
+        val userid = findViewById<EditText>(R.id.searchName).text.toString()
+        database = FirebaseDatabase.getInstance().getReference("Users")
+        database.child("users").child(userid).removeValue()
+
+
+    }
     fun findUser(v: View?) {
         database = FirebaseDatabase.getInstance().getReference("Users")
-        val text = findViewById<EditText>(R.id.showText)
+        val textEmail = findViewById<EditText>(R.id.resultEmail)
+        val textUsername = findViewById<EditText>(R.id.resultUsername)
         val name = findViewById<EditText>(R.id.searchName).text.toString()
         database.child("users").child(name).get().addOnSuccessListener {
             val email =  it.child("email").value
-            text.setText(email.toString())
+            val username = it.child("username").value
+            textEmail.setText(email.toString())
+            textUsername.setText(username.toString())
         }.addOnFailureListener{
             Log.e("firebase", "Error getting data", it)
         }
@@ -62,6 +83,7 @@ class MainActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().getReference("Users")
         database.child("users").child(userId).setValue(user)
     }
+
 
     private  fun loadFragment(fragment: Fragment){
         val transaction = supportFragmentManager.beginTransaction()
